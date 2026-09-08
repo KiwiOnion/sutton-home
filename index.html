@@ -174,9 +174,6 @@
     }
 
     .post-list h2 {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.625rem;
       min-width: 0;
       color: var(--ink);
       font-size: 0.875rem;
@@ -184,19 +181,6 @@
       letter-spacing: -0.00563rem;
       line-height: normal;
       transition: opacity var(--duration-row) ease;
-    }
-
-    .post-list h2::after {
-      content: "";
-      display: block;
-      width: 0.35rem;
-      height: 0.35rem;
-      flex-shrink: 0;
-      border-top: 1px solid currentColor;
-      border-right: 1px solid currentColor;
-      transform: rotate(45deg);
-      opacity: 0;
-      transition: transform var(--duration-row) ease, opacity var(--duration-row) ease;
     }
 
     .post-list time {
@@ -249,11 +233,6 @@
       .post-list > ul > li > ul > li > a:hover time span {
         opacity: 1;
       }
-
-      .post-list > ul > li > ul > li > a:hover h2::after {
-        opacity: 1;
-        transform: translateX(0.25rem) rotate(45deg);
-      }
     }
 
     @media screen and (max-width: 520px) {
@@ -291,8 +270,7 @@
         animation: none;
       }
       .post-list h2,
-      .post-list time span,
-      .post-list h2::after {
+      .post-list time span {
         transition: none;
       }
     }
@@ -309,7 +287,7 @@
               <a href="https://portal.sutton.top/">
                 <h2>AI Portal Demo</h2>
                 <time datetime="2026-09-08">
-                  <span>08/09</span><span>/</span><span>2026</span>
+                  <span>8/Sep</span><span>/</span><span>2026</span>
                 </time>
               </a>
             </li>
@@ -317,7 +295,7 @@
               <a href="https://clp.sutton.top/">
                 <h2>CLP Group Demo</h2>
                 <time datetime="2026-09-08">
-                  <span>08/09</span><span>/</span><span>2026</span>
+                  <span>8/Sep</span><span>/</span><span>2026</span>
                 </time>
               </a>
             </li>
