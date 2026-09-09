@@ -38,7 +38,7 @@ Reference: [benji.org](https://benji.org/) Writing list only.
 - Bottom inset: `5rem`
 - Row padding: `0.735rem 0`, title inset `6.75rem` (`3rem` below 520px)
 - Year sits in the left inset of the first row of each year group
-- Day/month abbreviation sits on the right (`8/Sep`)
+- Month abbreviation and day sit on the right (`Sep 8`)
 - Hairline under in-year rows starts at the title inset, not under the year
 
 ## Components
